@@ -96,6 +96,7 @@ String currentUser = "#currentUser.username#";
                         if (role_req != null && !role_req.isEmpty()) {
         
                             String usersReq = "";
+                                    //                                                                role_dep คือช่อง dept appr ฟิตเตอร์ Department role_req คือ role requester
                             Collection emp = directoryManager.getEmployments((String) null, (String) null, role_dep, role_req, (String) null, (String) null, (String) null, (String) null);
                             for (Object e: emp) {
                                 Employment userEmployment = (Employment) e;
