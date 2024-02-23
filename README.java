@@ -38,7 +38,6 @@ String compareValues = "#form.itreq_main.req_tem_type#";
 String processId = "#process.processId#";
 String currentUser = "#currentUser.username#";
 
-            System.out.println("==================================");
 
             if (rows2.size() > 0) {
         
@@ -70,9 +69,7 @@ String currentUser = "#currentUser.username#";
         
                             //   new
                             Collection emp = directoryManager.getEmployments((String) null, (String) null, role_dep, role_req, (String) null, (String) null, (String) null, (String) null);
-                            System.out.println("==================================");
                             for (Object e: emp) {
-                                System.out.println("==================================");
                                 Employment usersReq = (Employment) e;
                                 if (usersReq.getUserId().equals(currentUser)) {
                                     role = usersReq.getGrade().getId();
