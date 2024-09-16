@@ -99,7 +99,7 @@ public class FilePostEncoded extends CustomDeclarativeWebScript {
 	}
 	
 	public void setParams(Map<String,String> params){
-		this.processType = params.containsKey("processType") ? params.get("processType") : null;		
+				
 	}
 	
 	/**
@@ -107,7 +107,6 @@ public class FilePostEncoded extends CustomDeclarativeWebScript {
 	 */
 	public void setObjects(Map<String,Object> objects) {
 		masterDataService = (MasterDataService) objects.get("masterDataService");
-		externalWorkflowManager = (ExternalWorkflowManager) objects.get("externalWorkflowManager");
 	}
 
 	/**
